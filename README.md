@@ -20,4 +20,5 @@ https://docs.aws.amazon.com/amplify/latest/userguide/getting-started-next.html
 
 ## Network Diagram
 
-<img width="762" height="305" alt="ChoresTimerAWSReactApp drawio" src="https://github.com/user-attachments/assets/94585a9d-c949-4056-82fd-cf8ffaec49a8" />
+![ChoresTimerAWSReactApp](https://github.com/user-attachments/assets/da9dea16-500c-4dc3-aec4-a8dc8813249e)
+

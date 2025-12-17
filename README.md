@@ -9,3 +9,8 @@ Use managed AWS services with clear boundaries:
 - API Gateway
 - Lambda
 - DynamoDB (single-table, household-scoped data)
+
+## Build: REST API -> Lamda -> DynamoDB
+
+https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html
+

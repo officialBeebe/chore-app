@@ -1,0 +1,164 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: chore-app
+meta:
+  id: wrk_63bcba538275423fbfae94487bfddb52
+  created: 1766030938267
+  modified: 1766030938267
+  description: ""
+collection:
+  - name: /items
+    meta:
+      id: fld_8e32419e56fa4ae386f1acafe1b53627
+      created: 1766030995223
+      modified: 1766031018149
+      sortKey: -1766030995423
+      description: ""
+    children:
+      - url: https://92rdl2pl35.execute-api.us-east-2.amazonaws.com/items
+        name: Create Item
+        meta:
+          id: req_19f173033034439885886a39849d37f5
+          created: 1766030947916
+          modified: 1766099813580
+          isPrivate: false
+          description: ""
+          sortKey: -1766031007870
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Sweep upstairs",
+              "description": "Sweep the upstairs hallway and bathroom.",
+              "frequency": 3,
+              "dueDate": "2025-01-01T00:00:00Z"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://92rdl2pl35.execute-api.us-east-2.amazonaws.com/items
+        name: Get All Items
+        meta:
+          id: req_ba1a6e38204442f3b0a222d5c7f4d549
+          created: 1766030980662
+          modified: 1766099817473
+          isPrivate: false
+          description: ""
+          sortKey: -1766031007920
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - name: /{id}
+        meta:
+          id: fld_dc53f741dfdb4c95b2c5fe46639f3196
+          created: 1766031028007
+          modified: 1766031084283
+          sortKey: -1766031007770
+          description: ""
+        children:
+          - url: https://92rdl2pl35.execute-api.us-east-2.amazonaws.com/items/{id}
+            name: Delete Item by UUID
+            meta:
+              id: req_9bd469afb0ff482bb55f0130aa144c66
+              created: 1766031039650
+              modified: 1766099808397
+              isPrivate: false
+              description: ""
+              sortKey: -1766031039650
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://92rdl2pl35.execute-api.us-east-2.amazonaws.com/items/{id}
+            name: Get Item by UUID
+            meta:
+              id: req_5a48e7eafa8547b989d898055b8cae46
+              created: 1766031051696
+              modified: 1766099804386
+              isPrivate: false
+              description: ""
+              sortKey: -1766031039750
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://92rdl2pl35.execute-api.us-east-2.amazonaws.com/items/{id}
+            name: Touch Item
+            meta:
+              id: req_052f40d4cc424d7c8d75e13ca350f142
+              created: 1766088746474
+              modified: 1766099801253
+              isPrivate: false
+              description: ""
+              sortKey: -1766088746474
+            method: PATCH
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e24bffb7a79b888c9c75662c797b119cd7fa2420
+    created: 1766030938269
+    modified: 1766030938269
+environments:
+  name: Base Environment
+  meta:
+    id: env_e24bffb7a79b888c9c75662c797b119cd7fa2420
+    created: 1766030938268
+    modified: 1766030938268
+    isPrivate: false

@@ -9,8 +9,8 @@ It utilizes AWS-managed services to provide a simple and scalable backend.
 
 - **Table name:** `chore-app-items`
 - **Partition key:** `id` (UUID)
-- **Purpose:** Stores chore records with flexible attributes
-- **Notes:** UUIDs are generated server-side; timestamps are server-generated
+- **Purpose:** Stores chore records
+- **Notes:** UUIDs and timestamps are server-generated
 
 ---
 

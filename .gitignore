@@ -1,0 +1,67 @@
+# =========================
+# Secrets & environment
+# =========================
+.env
+.env.*
+!.env.example
+
+# AWS / Amplify
+amplify/.config/local-*
+amplify/backend/amplify-meta.json
+amplify/backend/awscloudformation
+amplify/#current-cloud-backend
+amplify/.aws
+aws-exports.js
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+dist/
+build/
+.next/
+out/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Python / Lambda
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env.venv
+pip-wheel-metadata/
+.eggs/
+*.egg-info/
+*.egg
+
+# =========================
+# Infrastructure artifacts
+# =========================
+cdk.out/
+*.sam.json
+*.template.json
+
+# =========================
+# Editor / OS
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+tmp/
+temp/
+

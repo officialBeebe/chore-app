@@ -1,0 +1,212 @@
+/* ======================================================
+   Global Reset / Base
+====================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  background: #f6f7f9;
+  color: #1f2933;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+/* ======================================================
+   App Layout
+====================================================== */
+
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ======================================================
+   Buttons
+====================================================== */
+
+button {
+  border-radius: 6px;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.create-button {
+  background: #2563eb;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.create-button:hover {
+  background: #1d4ed8;
+}
+
+.touch-button {
+  background: #10b981;
+  color: white;
+}
+
+.touch-button:hover {
+  background: #059669;
+}
+
+.delete-button {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #dc2626;
+}
+
+/* ======================================================
+   Chore Grid
+====================================================== */
+
+.chore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ======================================================
+   Chore Card
+====================================================== */
+
+.chore {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.chore h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.chore p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.countdown {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.due-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.chore .buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+/* ======================================================
+   Modal Overlay
+====================================================== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* ======================================================
+   Create Form
+====================================================== */
+
+.create-form {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.create-form h2 {
+  margin-bottom: 1rem;
+}
+
+.create-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.create-form input,
+.create-form textarea {
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.create-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.create-form input:focus,
+.create-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.create-form .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* ======================================================
+   States
+====================================================== */
+
+.error {
+  color: #dc2626;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+

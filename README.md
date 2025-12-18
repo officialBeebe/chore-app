@@ -16,6 +16,10 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.
 
 > [Clean up](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-dynamo-db.html#http-api-dynamo-db-cleanup)
 
+## Build: React UI
+
+`npm create vite@latest chore-app-ui -- --template react-ts`
+
 ## Deploy: React UI to Amplify
 
 https://docs.aws.amazon.com/amplify/latest/userguide/getting-started-next.html
